@@ -12,7 +12,7 @@ import java.util.UUID;
 public interface CustomerRepository extends CrudRepository<Customer, UUID> {
     /**
      * Retrieves a customer based on the provided phone number.
-     *
+
      * This method executes a native SQL query to select the `id`, `customerName`,
      * and `phoneNumber` from the `Customer` table where the `phoneNumber` matches
      * the given parameter.
